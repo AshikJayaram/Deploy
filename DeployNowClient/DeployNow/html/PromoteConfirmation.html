@@ -1,0 +1,22 @@
+﻿<section>
+    <form  name="confirmationForm" novalidate>
+        <div id="confirmation" class="modal" role="dialog" aria-hidden="true">
+            <div class="modal-header">
+                <p class="text-highlight">Please select the task to perform</p>   
+            </div>
+            <div class="modal-body warning-msg">
+                <a href="" class="penta gon" data-ng-click="ConfirmationServiceModel.CallTask('StopIIS')">Stop IIS</a>  
+                <a href="" class="penta gon" data-ng-click="ConfirmationServiceModel.CallTask('Promote')">Promote Code</a> 
+                <a href="" class="penta gon" data-ng-click="ConfirmationServiceModel.CallTask('ClearCache')">Cache clear</a> 
+                <a href="" class="penta gon" data-ng-click="ConfirmationServiceModel.CallTask('StartIIS')">Start IIS</a> 
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-yes" data-ng-click="ConfirmationServiceModel.CallTask('Close')">Cancel</button>
+            </div>
+        </div>
+    </form>
+</section>
+
+
+

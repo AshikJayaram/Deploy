@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildCompression", "BuildCompression\BuildCompression.csproj", "{FE8AA000-9A39-4763-8DC8-1BDFF90E839F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BCB8E4BF-F2BA-4831-A49B-A8D520158D4F}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeployListener", "DeployListener\DeployListener.csproj", "{145CAC7A-CEF6-4014-A582-CCAA2579DED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeployNowClient", "DeployNowClient\DeployNowClient.csproj", "{100A6C59-B6B0-457A-A772-2F44246DF23E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C68A2B5B-AE48-42D0-BA62-03059E616386} = {C68A2B5B-AE48-42D0-BA62-03059E616386}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingDeployment", "TestingDeployment\TestingDeployment.csproj", "{C68A2B5B-AE48-42D0-BA62-03059E616386}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.157.7.6:8080/tfs/papillon
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BuildCompression\\BuildCompression.csproj
+		SccProjectName1 = BuildCompression
+		SccLocalPath1 = BuildCompression
+		SccProjectUniqueName2 = DeployNowClient\\DeployNowClient.csproj
+		SccProjectName2 = DeployNowClient
+		SccLocalPath2 = DeployNowClient
+		SccProjectUniqueName3 = DeployListener\\DeployListener.csproj
+		SccProjectName3 = DeployListener
+		SccLocalPath3 = DeployListener
+		SccProjectUniqueName4 = TestingDeployment\\TestingDeployment.csproj
+		SccProjectName4 = TestingDeployment
+		SccLocalPath4 = TestingDeployment
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE8AA000-9A39-4763-8DC8-1BDFF90E839F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE8AA000-9A39-4763-8DC8-1BDFF90E839F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE8AA000-9A39-4763-8DC8-1BDFF90E839F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE8AA000-9A39-4763-8DC8-1BDFF90E839F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{145CAC7A-CEF6-4014-A582-CCAA2579DED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145CAC7A-CEF6-4014-A582-CCAA2579DED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145CAC7A-CEF6-4014-A582-CCAA2579DED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145CAC7A-CEF6-4014-A582-CCAA2579DED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{100A6C59-B6B0-457A-A772-2F44246DF23E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{100A6C59-B6B0-457A-A772-2F44246DF23E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{100A6C59-B6B0-457A-A772-2F44246DF23E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{100A6C59-B6B0-457A-A772-2F44246DF23E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C68A2B5B-AE48-42D0-BA62-03059E616386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C68A2B5B-AE48-42D0-BA62-03059E616386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C68A2B5B-AE48-42D0-BA62-03059E616386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C68A2B5B-AE48-42D0-BA62-03059E616386}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

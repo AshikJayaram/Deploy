@@ -1,0 +1,85 @@
+﻿<table class="table table-bordered region-grid">
+    <thead>
+        <tr>
+            <th data-ng-repeat="region in DashboardService.DashboardModel.BuildRegions">
+                <div class="text-center" data-ng-bind="region"></div>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="text-center padding-zero">
+                <ul class="build-queue">
+                    <li data-ng-repeat="version in DashboardService.DashboardModel.BuildVersions | orderBy : '-CreationTime'"
+                        data-ng-click="DashboardService.PromoteForDeployment(version.FileName,'DEV')"
+                        title="Promote to DEV">
+                        <div class="row-fluid file-node">
+                            <strong data-display-name="version.FileName"></strong>
+                            <div data-ng-bind="version.CreationTime"></div>
+                        </div>
+                    </li>
+                </ul>
+            </td>
+            <td class="text-center padding-zero">
+                <ul class="build-queue">
+                    <li data-ng-repeat="version in DashboardService.DashboardModel.DevVersions | orderBy : '-CreationTime'"
+                        data-ng-click="DashboardService.PromoteForDeployment(version.FileName,'ST')"
+                        title="Promote to ST">
+                        <div class="row-fluid file-node">
+                            <strong data-display-name="version.FileName"></strong>
+                            <div data-ng-bind="version.CreationTime|date:'dd/MMM/yyyy'"></div>
+                        </div>
+                    </li>
+                </ul>
+            </td>
+            <td class="text-center padding-zero">
+                <ul class="build-queue">
+                    <li data-ng-repeat="version in DashboardService.DashboardModel.STVersions | orderBy : '-CreationTime'"
+                        data-ng-click="DashboardService.PromoteForDeployment(version.FileName,'UAT')"
+                        title="Promote to UAT">
+                        <div class="row-fluid file-node">
+                            <strong data-display-name="version.FileName"></strong>
+                            <div data-ng-bind="version.CreationTime|date:'dd/MMM/yyyy'"></div>
+                        </div>
+                    </li>
+                </ul>
+            </td>
+            <td class="text-center padding-zero">
+                <ul class="build-queue">
+                    <li data-ng-repeat="version in DashboardService.DashboardModel.UATVersions | orderBy : '-CreationTime'"
+                        data-ng-click="DashboardService.PromoteForDeployment(version.FileName,'PREPROD')"
+                        title="Promote to PRE-PROD">
+                        <div class="row-fluid file-node">
+                            <strong data-display-name="version.FileName"></strong>
+                            <div data-ng-bind="version.CreationTime|date:'dd/MMM/yyyy'"></div>
+                        </div>
+                    </li>
+                </ul>
+            </td>
+            <td class="text-center padding-zero">
+                <ul class="build-queue">
+                    <li data-ng-repeat="version in DashboardService.DashboardModel.PreProdVersions | orderBy : '-CreationTime'"
+                        data-ng-click="DashboardService.PromoteForDeployment(version.FileName,'PROD')"
+                        title="Promote to PROD">
+                        <div class="row-fluid file-node">
+                            <strong data-display-name="version.FileName"></strong>
+                            <div data-ng-bind="version.CreationTime|date:'dd/MMM/yyyy'"></div>
+                        </div>
+                    </li>
+                </ul>
+            </td>
+            <td class="text-center padding-zero">
+                <ul class="build-queue">
+                    <li data-ng-repeat="version in DashboardService.DashboardModel.ProdVersions | orderBy : '-CreationTime'">
+                        <div class="row-fluid">
+                            <strong data-display-name="version.FileName"></strong>
+                            <div data-ng-bind="version.CreationTime|date:'dd/MMM/yyyy'"></div>
+                        </div>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+    

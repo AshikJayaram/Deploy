@@ -1,0 +1,5 @@
+﻿<!-- Place this configuration file in destination folder. -->
+<BuildCompression>
+  <BuildVersion>0.13</BuildVersion>
+  <NoOfBuilds>10</NoOfBuilds>
+</BuildCompression>

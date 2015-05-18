@@ -1,0 +1,62 @@
+﻿[
+{ "Region":"BUILDS",
+   "ServerList":[   {
+						"ServerUrl":"http://localhost:8080",
+						"DeployDirectory":"C:\\Papillon"
+					   }],
+	 "FileLimit" : "10",
+     "SourceFileLocation" : "C:\\BUILDS",
+	 "DestinationFileLocation" : "C:\\DEV",
+	 "ConfigFileLocation" : ""
+},
+{ "Region":"DEV",
+   "ServerList":[   {
+						"ServerUrl":"http://10.157.84.5:8172/",
+						"DeployDirectory":"D:\\PapillonDEV"
+					   }],
+	 "FileLimit" : "10",
+     "SourceFileLocation" : "C:\\BUILDS",
+	 "DestinationFileLocation" : "C:\\DEV",
+	 "ConfigFileLocation" : ""
+},
+{ "Region":"ST",
+   "ServerList":[   {
+						"ServerUrl":"http://10.157.84.5:8172/",
+						"DeployDirectory":"D:\\PapillonST"
+					   }],
+	 "FileLimit" : "10",
+     "SourceFileLocation" : "C:\\DEV",
+	 "DestinationFileLocation" : "C:\\ST",
+	 "ConfigFileLocation" : ""
+},
+{ "Region":"UAT",
+   "ServerList":[   {
+						"ServerUrl":"http://10.157.84.5:8172/",
+						"DeployDirectory":"D:\\PapillonUAT"
+					   }],
+	 "FileLimit" : "10",
+     "SourceFileLocation" : "C:\\ST",
+	 "DestinationFileLocation" : "C:\\UAT",
+	 "ConfigFileLocation" : ""
+},
+{ "Region":"PREPROD",
+   "ServerList":[   {
+						"ServerUrl":"http://10.157.84.5:8172/",
+						"DeployDirectory":"D:\\PapillonPREPROD"
+					   }],
+	 "FileLimit" : "10",
+     "SourceFileLocation" : "C:\\UAT",
+	 "DestinationFileLocation" : "C:\\PREPROD",
+	 "ConfigFileLocation" : ""
+},
+{ "Region":"PROD",
+   "ServerList":[   {
+						"ServerUrl":"http://10.157.84.5:8172/",
+						"DeployDirectory":"D:\\PapillonPROD"
+					   }],
+	 "FileLimit" : "10",
+     "SourceFileLocation" : "C:\\PREPROD",
+	 "DestinationFileLocation" : "C:\\PROD",
+	 "ConfigFileLocation" : ""
+}
+]
